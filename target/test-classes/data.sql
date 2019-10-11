@@ -1,3 +1,14 @@
+insert into role (id,nome) values (1, 'ROLE_USER');
+insert into role (id,nome) values (2, 'ROLE_ADMIN');
+
+INSERT INTO user(id, email, login, nome, senha) VALUES(1, 'renan@gmail.com', 'renan', 'Renan', '$2a$10$HKveMsPlst41Ie2LQgpijO691lUtZ8cLfcliAO1DD9TtZxEpaEoJe');
+INSERT INTO user(id, email, login, nome, senha) VALUES(2, 'admin@gmail.com', 'admin', 'Admin', '$2a$10$HKveMsPlst41Ie2LQgpijO691lUtZ8cLfcliAO1DD9TtZxEpaEoJe');
+INSERT INTO user(id, email, login, nome, senha) VALUES(3, 'user@gmail.com', 'user', 'User', '$2a$10$HKveMsPlst41Ie2LQgpijO691lUtZ8cLfcliAO1DD9TtZxEpaEoJe');
+
+INSERT INTO user_roles (user_id, role_id) VALUES(1, 1);
+INSERT INTO user_roles (user_id, role_id) VALUES(2, 2);
+INSERT INTO user_roles (user_id, role_id) VALUES(3, 1);
+
 insert into carro (nome,descricao,url_foto,url_video,latitude,longitude,tipo) VALUES('Tucker 1948','Descrição Tucker 1948','http://www.livroandroid.com.br/livro/carros/classicos/Tucker.png','http://www.livroandroid.com.br/livro/carros/classicos/tucker.mp4','-23.564224','-46.653156','classicos');
 insert into carro (nome,descricao,url_foto,url_video,latitude,longitude,tipo) VALUES('Chevrolet Corvette','Descrição Chevrolet Corvette','http://www.livroandroid.com.br/livro/carros/classicos/Chevrolet_Corvette.png','http://www.livroandroid.com.br/livro/carros/classicos/corvette.mp4','-23.564224','-46.653156','classicos');
 insert into carro (nome,descricao,url_foto,url_video,latitude,longitude,tipo) VALUES('Chevrolet Impala Coupe','Descrição Chevrolet Impala Coupe','http://www.livroandroid.com.br/livro/carros/classicos/Chevrolet_Impala_Coupe.png','http://www.livroandroid.com.br/livro/carros/classicos/chevrolet_impala.mp4','-23.564224','-46.653156','classicos');

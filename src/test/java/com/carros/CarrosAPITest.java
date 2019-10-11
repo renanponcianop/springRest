@@ -62,7 +62,7 @@ public class CarrosAPITest {
         assertEquals("Porshe", c.getNome());
         assertEquals("esportivos", c.getTipo());
 
-        rest.withBasicAuth("user","123").delete(location);
+        rest.withBasicAuth("admin","123").delete(location);
 
         // Verificar se deletou
         assertEquals(HttpStatus.NOT_FOUND, getCarro(location).getStatusCode());
